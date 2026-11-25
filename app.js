@@ -1,8 +1,8 @@
 // Dialed hero: product stack switches hero product + background scene
 const H={
- cake:{img:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1000&q=80",bg:"#c10017",name:"Custom Celebration Cake",meta:"Made to order",price:"Price on enquiry"},
- bento:{img:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1000&q=80",bg:"#2b95c5",name:"Bento Cake",meta:"Customised",price:"Price on enquiry"},
- cup:{img:"https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1000&q=80",bg:"#671f31",name:"Cupcakes",meta:"Boxes of 4 & 6",price:"Price on enquiry"}
+ cake:{img:"assets/cake.webp",bg:"#c10017",name:"Custom Celebration Cake",meta:"Made to order",price:"Price on enquiry"},
+ bento:{img:"assets/bento.webp",bg:"#2b95c5",name:"Bento Cake",meta:"Customised",price:"Price on enquiry"},
+ cup:{img:"assets/cupcakes.webp",bg:"#671f31",name:"Cupcakes",meta:"Boxes of 4 & 6",price:"Price on enquiry"}
 };
 function setHero(k,btn){
  const d=H[k];if(!d)return;
