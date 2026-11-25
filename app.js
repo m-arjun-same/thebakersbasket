@@ -4,7 +4,7 @@ const H={
  bento:{img:"assets/bento.webp",bg:"#2b95c5",name:"Bento Cake",meta:"Customised",price:"Price on enquiry"},
  cup:{img:"assets/cupcakes.webp",bg:"#671f31",name:"Cupcakes",meta:"Boxes of 4 & 6",price:"Price on enquiry"}
 };
-function setHero(k,btn){
+function setHero(k,btn){ if(window.resetAuto) resetAuto();
  const d=H[k];if(!d)return;
  const h=document.getElementById('hero'); h.style.background=d.bg; h.classList.add('on-dark');
  document.getElementById('heroImg').src=d.img;

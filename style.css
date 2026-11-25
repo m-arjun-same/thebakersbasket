@@ -119,3 +119,26 @@ footer .giant{font-size:clamp(80px,18.5vw,290px);line-height:.78;text-align:cent
 @media(max-width:820px){.pdp{grid-template-columns:1fr}.pdp .photo{height:46vh}}
 .sec{padding:84px 32px;background:#fcfcfc}.sec.warm{background:var(--warm)}
 .sec h2{font-size:clamp(36px,5vw,64px);margin-bottom:28px}
+/* engine: preloader + cart drawer + reveals (Dialed behaviours) */
+#preloader{position:fixed;inset:0;z-index:200;background:#281b13;color:#fcfcfc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:transform .8s cubic-bezier(.76,0,.24,1)}
+#preloader.done{transform:translateY(-100%)}
+.pre-logo{font-size:26px;font-weight:900;text-transform:uppercase}.pre-logo i{font-family:Georgia,serif;font-weight:400;text-transform:none}
+.pre-word{letter-spacing:.35em;font-size:13px;color:#ff4c24}
+.pre-pct{font-size:64px;font-weight:900;line-height:1}
+.pre-bar{width:200px;height:3px;background:#4a3527}.pre-bar span{display:block;height:100%;background:#ff4c24;transform:scaleX(0);transform-origin:left}
+#cartDrawer{position:fixed;top:0;right:0;bottom:0;width:min(400px,92vw);background:#fcfcfc;z-index:150;transform:translateX(105%);transition:transform .55s cubic-bezier(.76,0,.24,1);display:flex;flex-direction:column;padding:24px;box-shadow:-10px 0 40px rgba(0,0,0,.2)}
+#cartDrawer.open{transform:none}
+.cart-head{display:flex;justify-content:space-between;align-items:center;font-size:18px;text-transform:uppercase}
+.cart-head button{background:none;border:0;font-size:20px;cursor:pointer}
+#cartItems{flex:1;overflow:auto;margin-top:20px}
+.cart-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #e4dfdb}
+.cart-row small{display:block;color:#8a7a6d}
+.cart-row .qty{display:flex;gap:12px;align-items:center;font-weight:800}
+.cart-row .qty button{width:28px;height:28px;border-radius:50%;border:1px solid #281b13;background:none;cursor:pointer;font-size:16px}
+.cart-empty{color:#8a7a6d}
+.cart-foot p{font-size:12px;color:#8a7a6d;margin-bottom:12px}
+.cart-foot .btn{width:100%;text-align:center}
+#cartShade{position:fixed;inset:0;background:rgba(20,14,10,.5);z-index:140;opacity:0;pointer-events:none;transition:opacity .4s}
+#cartShade.open{opacity:1;pointer-events:auto}
+.hero h1,.slide h2{overflow:hidden}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
